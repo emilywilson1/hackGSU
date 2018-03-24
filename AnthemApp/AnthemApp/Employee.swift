@@ -9,7 +9,7 @@
 import Foundation
 class Employee {
     
-    let name: String
+    var employeeName: String
     var id: UInt
     var managerID: UInt
     var streak: UInt
@@ -18,7 +18,7 @@ class Employee {
     var isManager: Bool
     
     init(name: String, id: UInt, manager: UInt, password: String, isManager: Bool) {
-        self.name = name
+        employeeName = name
         self.id = id
         self.password = password
         managerID = manager
@@ -29,6 +29,10 @@ class Employee {
     
     func incrStreak() {
         streak += 1;
+    }
+    
+    func storeResponse() {
+        
     }
     
     

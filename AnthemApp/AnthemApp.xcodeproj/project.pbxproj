@@ -11,14 +11,28 @@
 		303011792066976F0041F9DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303011732066976F0041F9DE /* Assets.xcassets */; };
 		3030117E206697E10041F9DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3030117D206697E10041F9DE /* Main.storyboard */; };
 		30301180206699AC0041F9DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3030117F206699AC0041F9DE /* AppDelegate.swift */; };
-		30301182206699B60041F9DE /* EmojiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30301181206699B60041F9DE /* EmojiButton.swift */; };
 		30301184206699C60041F9DE /* EmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30301183206699C60041F9DE /* EmployeeViewController.swift */; };
 		30301186206699D30041F9DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30301185206699D30041F9DE /* LoginViewController.swift */; };
 		30301188206699E00041F9DE /* ManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30301187206699E00041F9DE /* ManagerViewController.swift */; };
 		3030118D20669C900041F9DE /* Employees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3030118C20669C900041F9DE /* Employees.swift */; };
 		3030118F20669CBC0041F9DE /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3030118E20669CBC0041F9DE /* Employee.swift */; };
 		3030119120669F9C0041F9DE /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3030119020669F9C0041F9DE /* Manager.swift */; };
+		303011952066B1860041F9DE /* StreakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303011942066B1860041F9DE /* StreakViewController.swift */; };
+		303011A52066CAB80041F9DE /* ResponseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303011A42066CAB80041F9DE /* ResponseStorage.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		303011A32066C6F50041F9DE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3030115A2066974D0041F9DE /* AnthemApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnthemApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,13 +41,15 @@
 		303011732066976F0041F9DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3030117D206697E10041F9DE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3030117F206699AC0041F9DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30301181206699B60041F9DE /* EmojiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiButton.swift; sourceTree = "<group>"; };
 		30301183206699C60041F9DE /* EmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewController.swift; sourceTree = "<group>"; };
 		30301185206699D30041F9DE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		30301187206699E00041F9DE /* ManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerViewController.swift; sourceTree = "<group>"; };
 		3030118C20669C900041F9DE /* Employees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employees.swift; sourceTree = "<group>"; };
 		3030118E20669CBC0041F9DE /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		3030119020669F9C0041F9DE /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		303011942066B1860041F9DE /* StreakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakViewController.swift; sourceTree = "<group>"; };
+		303011962066C6E60041F9DE /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Charts.xcodeproj; sourceTree = "<group>"; };
+		303011A42066CAB80041F9DE /* ResponseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,18 +82,20 @@
 		3030115C2066974D0041F9DE /* AnthemApp */ = {
 			isa = PBXGroup;
 			children = (
+				303011962066C6E60041F9DE /* Charts.xcodeproj */,
 				303011732066976F0041F9DE /* Assets.xcassets */,
+				303011942066B1860041F9DE /* StreakViewController.swift */,
 				30301183206699C60041F9DE /* EmployeeViewController.swift */,
 				30301185206699D30041F9DE /* LoginViewController.swift */,
 				30301187206699E00041F9DE /* ManagerViewController.swift */,
 				3030118C20669C900041F9DE /* Employees.swift */,
 				3030118E20669CBC0041F9DE /* Employee.swift */,
+				303011A42066CAB80041F9DE /* ResponseStorage.swift */,
 				3030119020669F9C0041F9DE /* Manager.swift */,
 				3030117D206697E10041F9DE /* Main.storyboard */,
 				303011662066974D0041F9DE /* LaunchScreen.storyboard */,
 				303011692066974D0041F9DE /* Info.plist */,
 				3030117F206699AC0041F9DE /* AppDelegate.swift */,
-				30301181206699B60041F9DE /* EmojiButton.swift */,
 			);
 			path = AnthemApp;
 			sourceTree = "<group>";
@@ -92,6 +110,7 @@
 				303011562066974D0041F9DE /* Sources */,
 				303011572066974D0041F9DE /* Frameworks */,
 				303011582066974D0041F9DE /* Resources */,
+				303011A32066C6F50041F9DE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,10 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				30301188206699E00041F9DE /* ManagerViewController.swift in Sources */,
+				303011952066B1860041F9DE /* StreakViewController.swift in Sources */,
+				303011A52066CAB80041F9DE /* ResponseStorage.swift in Sources */,
 				3030118F20669CBC0041F9DE /* Employee.swift in Sources */,
 				30301186206699D30041F9DE /* LoginViewController.swift in Sources */,
 				3030119120669F9C0041F9DE /* Manager.swift in Sources */,
-				30301182206699B60041F9DE /* EmojiButton.swift in Sources */,
 				3030118D20669C900041F9DE /* Employees.swift in Sources */,
 				30301180206699AC0041F9DE /* AppDelegate.swift in Sources */,
 				30301184206699C60041F9DE /* EmployeeViewController.swift in Sources */,
@@ -289,6 +309,7 @@
 		3030116D2066974D0041F9DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AnthemApp/Info.plist;
@@ -303,6 +324,7 @@
 		3030116E2066974D0041F9DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AnthemApp/Info.plist;

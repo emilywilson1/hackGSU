@@ -34,21 +34,25 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var password: UITextField!
     
-    @IBAction func login(_ sender: Any) {
+    @IBAction func login() {
         let employeeslist = Employees()
-        print("employeeslist works")
+        print(username.text)
         let employee = employeeslist.getEmployeeById(id: UInt(username.text!)!)
-        print(employee.name)
-        if (employee.password != password.text) {
-            print("error signing in occurred")
-        }
-        else {
-            if (employee.isManager) {
-                //segue to manager portal
-            } else {
-                let employeeVC = storyboard?.instantiateViewController(withIdentifier: "employeeViewController") as! EmployeeViewController
-                employeeVC.user = employee
-                self.present(employeeVC, animated: true, completion: nil)
+        if (employee != nil) {
+            print(employee?.employeeName)
+            if (employee!.password != password.text) {
+                print("error signing in occurred")
+            }
+            else {
+                if (employee!.isManager) {
+                    let managerVC = storyboard?.instantiateViewController(withIdentifier: "managerVC") as! ManagerViewController
+                    managerVC.user = employee! as! Manager
+                    self.present(managerVC, animated: true, completion: nil)
+                } else {
+                    let employeeVC = storyboard?.instantiateViewController(withIdentifier: "employeeViewController") as! EmployeeViewController
+                    employeeVC.user = employee!
+                    self.present(employeeVC, animated: true, completion: nil)
+                }
             }
         }
     }
