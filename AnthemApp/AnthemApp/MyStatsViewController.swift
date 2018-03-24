@@ -1,5 +1,5 @@
 //
-//  ManagerViewController.swift
+//  MyStatsViewController.swift
 //  AnthemApp
 //
 //  Created by Emily Wilson on 3/24/18.
@@ -9,30 +9,27 @@
 import Foundation
 import UIKit
 
-class ManagerViewController: UIViewController {
-    @IBOutlet weak var timePeriod: UISegmentedControl!
-    @IBOutlet weak var percentEngagement: UIView!
-    
-    @IBOutlet weak var percentFavorable: UIView!
-    @IBOutlet weak var satisfactionCharts: UIView!
-    @IBOutlet weak var commentsBox: UIScrollView!
+class MyStatsViewController: UIViewController {
     
     @IBOutlet weak var greetingLabel: UILabel!
-    var user: Manager?
+    @IBOutlet weak var myRating: UILabel!
+    @IBOutlet weak var teamRating: UILabel!
+    @IBOutlet weak var anthemRating: UILabel!
+    
+    var user: Employee?
     
     required init?(coder aDecoder: NSCoder) {
         user = nil
         super.init(coder: aDecoder)
-        //fatalError("init(coder:) has not been implemented")
     }
-    
     override func viewDidLoad() {
-        greetingLabel.text = "Hello, \(user!.employeeName)!"
+        anthemRating.text = "\(user!.anthemStore.average_rating)"
+        myRating.text = "\(user!.responseStore.average_rating)"
+        teamRating.text = "\(user!.manager!.responseStore.average_rating)"
+        greetingLabel.text = "Hi \(user!.employeeName), here are your stats!"
     }
-    
     @IBAction func logout() {
         let loginVC = storyboard?.instantiateViewController(withIdentifier: "loginVC") as! LoginViewController
         self.present(loginVC, animated: true, completion: nil)
     }
 }
-

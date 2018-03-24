@@ -19,6 +19,7 @@
 		3030119120669F9C0041F9DE /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3030119020669F9C0041F9DE /* Manager.swift */; };
 		303011952066B1860041F9DE /* StreakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303011942066B1860041F9DE /* StreakViewController.swift */; };
 		303011A52066CAB80041F9DE /* ResponseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303011A42066CAB80041F9DE /* ResponseStorage.swift */; };
+		303011A72066EC6D0041F9DE /* MyStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303011A62066EC6D0041F9DE /* MyStatsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,7 @@
 		303011942066B1860041F9DE /* StreakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakViewController.swift; sourceTree = "<group>"; };
 		303011962066C6E60041F9DE /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Charts.xcodeproj; sourceTree = "<group>"; };
 		303011A42066CAB80041F9DE /* ResponseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStorage.swift; sourceTree = "<group>"; };
+		303011A62066EC6D0041F9DE /* MyStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				303011A42066CAB80041F9DE /* ResponseStorage.swift */,
 				3030119020669F9C0041F9DE /* Manager.swift */,
 				3030117D206697E10041F9DE /* Main.storyboard */,
+				303011A62066EC6D0041F9DE /* MyStatsViewController.swift */,
 				303011662066974D0041F9DE /* LaunchScreen.storyboard */,
 				303011692066974D0041F9DE /* Info.plist */,
 				3030117F206699AC0041F9DE /* AppDelegate.swift */,
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				303011A72066EC6D0041F9DE /* MyStatsViewController.swift in Sources */,
 				30301188206699E00041F9DE /* ManagerViewController.swift in Sources */,
 				303011952066B1860041F9DE /* StreakViewController.swift in Sources */,
 				303011A52066CAB80041F9DE /* ResponseStorage.swift in Sources */,

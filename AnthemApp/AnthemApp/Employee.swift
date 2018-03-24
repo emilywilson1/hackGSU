@@ -17,8 +17,9 @@ class Employee {
     var password: String
     var isManager: Bool
     var responseStore: ResponseStorage
+    var anthemStore: ResponseStorage
     
-    init(name: String, id: UInt, manager: Employee?, password: String, isManager: Bool) {
+    init(name: String, id: UInt, manager: Employee?, password: String, isManager: Bool, anthemStore: ResponseStorage) {
         employeeName = name
         self.id = id
         self.password = password
@@ -27,6 +28,7 @@ class Employee {
         streak = 0
         past365Days = []
         responseStore = ResponseStorage()
+        self.anthemStore = anthemStore
     }
     
     

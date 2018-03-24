@@ -24,29 +24,29 @@ class EmployeeViewController: UIViewController {
         //fatalError("init(coder:) has not been implemented")
     }
     
-    @IBAction func emoji0Pressed(_ sender: Any) {
+    @IBAction func emoji0Pressed() {
         emojiButtonPressed(emojiNum: 0)
     }
-    @IBAction func emoji1Pressed(_ sender: Any) {
+    @IBAction func emoji1Pressed() {
         emojiButtonPressed(emojiNum: 1)
     }
-    @IBAction func emoji2Pressed(_ sender: Any) {
+    @IBAction func emoji2Pressed() {
         emojiButtonPressed(emojiNum: 2)
     }
-    @IBAction func emoji3Pressed(_ sender: Any) {
+    @IBAction func emoji3Pressed() {
         emojiButtonPressed(emojiNum: 3)
     }
-    @IBAction func emoji4Pressed(_ sender: Any) {
+    @IBAction func emoji4Pressed() {
         emojiButtonPressed(emojiNum: 4)
     }
     
-    func emojiButtonPressed(emojiNum: UInt) {
+    func emojiButtonPressed(emojiNum: Int) {
         let streakVC = storyboard?.instantiateViewController(withIdentifier: "streakVC") as! StreakViewController
         user!.incrStreak()
         streakVC.user = user!
         streakVC.response = emojiNum
         user!.responseStore.addRating(rating: emojiNum)
-        user!.manager?.responseStore.addRating(rating: emojiNum)
+        user!.manager!.responseStore.addRating(rating: emojiNum)
         self.present(streakVC, animated: true, completion: nil)
     }
     

@@ -10,8 +10,9 @@ import Foundation
 
 class ResponseStorage {
     var commentQueue: Queue<String>
-    var ratingQueue: Queue<UInt>
+    var ratingQueue: Queue<Int>
     var size: Int
+    var average_rating : Float
     
     class Queue<T> {
         var backingArray: [T]
@@ -22,7 +23,7 @@ class ResponseStorage {
         }
         
         func add(data: T) {
-            backingArray[size] = data
+            backingArray.append(data)
             size += 1
         }
         
@@ -36,13 +37,19 @@ class ResponseStorage {
         commentQueue = Queue()
         ratingQueue = Queue()
         size = 0;
+        average_rating = 0
     }
     
     func addComment(comment: String) {
         commentQueue.add(data: comment)
     }
     
-    func addRating(rating: UInt) {
+    func addRating(rating: Int) {
+        average_rating = ((average_rating * Float(size)) + Float(rating)) / Float(size + 1)
         ratingQueue.add(data: rating)
+    }
+    
+    func resetAverages() {
+        average_rating = 0
     }
 }

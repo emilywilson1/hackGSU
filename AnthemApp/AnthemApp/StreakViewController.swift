@@ -17,8 +17,7 @@ class StreakViewController: UIViewController {
     @IBOutlet weak var suggestionBox: UITextField!
     
     var user: Employee?
-    var response: UInt?
-    var comment: String?
+    var response: Int?
     
     required init?(coder aDecoder: NSCoder) {
         user = nil
@@ -36,5 +35,18 @@ class StreakViewController: UIViewController {
             greetingLabel.text = "We're so glad that you're having a great experience at Anthem!"
             suggestionLabel.text = "Is there anything that made your experience with Anthem incredible today or is there anything we can do to improve your experience at Anthem?"
         }
+    }
+    @IBAction func viewMyStats() {
+        let statsVC = storyboard?.instantiateViewController(withIdentifier: "myStatsVC") as! MyStatsViewController
+        statsVC.user = user!
+        self.present(statsVC, animated: true, completion: nil)
+    }
+    @IBAction func submitFeedback() {
+        user!.manager!.responseStore.addComment(comment: suggestionBox.text!)
+    }
+    
+    @IBAction func logout() {
+        let loginVC = storyboard?.instantiateViewController(withIdentifier: "loginVC") as! LoginViewController
+        self.present(loginVC, animated: true, completion: nil)
     }
 }
