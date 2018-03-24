@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		303011682066974D0041F9DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303011662066974D0041F9DE /* LaunchScreen.storyboard */; };
+		303011792066976F0041F9DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303011732066976F0041F9DE /* Assets.xcassets */; };
+		3030117E206697E10041F9DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3030117D206697E10041F9DE /* Main.storyboard */; };
+		30301180206699AC0041F9DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3030117F206699AC0041F9DE /* AppDelegate.swift */; };
+		30301182206699B60041F9DE /* EmojiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30301181206699B60041F9DE /* EmojiButton.swift */; };
+		30301184206699C60041F9DE /* EmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30301183206699C60041F9DE /* EmployeeViewController.swift */; };
+		30301186206699D30041F9DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30301185206699D30041F9DE /* LoginViewController.swift */; };
+		30301188206699E00041F9DE /* ManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30301187206699E00041F9DE /* ManagerViewController.swift */; };
+		3030118D20669C900041F9DE /* Employees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3030118C20669C900041F9DE /* Employees.swift */; };
+		3030118F20669CBC0041F9DE /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3030118E20669CBC0041F9DE /* Employee.swift */; };
+		3030119120669F9C0041F9DE /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3030119020669F9C0041F9DE /* Manager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3030115A2066974D0041F9DE /* AnthemApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnthemApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		303011672066974D0041F9DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		303011692066974D0041F9DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		303011732066976F0041F9DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3030117D206697E10041F9DE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3030117F206699AC0041F9DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30301181206699B60041F9DE /* EmojiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiButton.swift; sourceTree = "<group>"; };
+		30301183206699C60041F9DE /* EmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewController.swift; sourceTree = "<group>"; };
+		30301185206699D30041F9DE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		30301187206699E00041F9DE /* ManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerViewController.swift; sourceTree = "<group>"; };
+		3030118C20669C900041F9DE /* Employees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employees.swift; sourceTree = "<group>"; };
+		3030118E20669CBC0041F9DE /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		3030119020669F9C0041F9DE /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		303011572066974D0041F9DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		303011512066974D0041F9DE = {
+			isa = PBXGroup;
+			children = (
+				3030115C2066974D0041F9DE /* AnthemApp */,
+				3030115B2066974D0041F9DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3030115B2066974D0041F9DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3030115A2066974D0041F9DE /* AnthemApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3030115C2066974D0041F9DE /* AnthemApp */ = {
+			isa = PBXGroup;
+			children = (
+				303011732066976F0041F9DE /* Assets.xcassets */,
+				30301183206699C60041F9DE /* EmployeeViewController.swift */,
+				30301185206699D30041F9DE /* LoginViewController.swift */,
+				30301187206699E00041F9DE /* ManagerViewController.swift */,
+				3030118C20669C900041F9DE /* Employees.swift */,
+				3030118E20669CBC0041F9DE /* Employee.swift */,
+				3030119020669F9C0041F9DE /* Manager.swift */,
+				3030117D206697E10041F9DE /* Main.storyboard */,
+				303011662066974D0041F9DE /* LaunchScreen.storyboard */,
+				303011692066974D0041F9DE /* Info.plist */,
+				3030117F206699AC0041F9DE /* AppDelegate.swift */,
+				30301181206699B60041F9DE /* EmojiButton.swift */,
+			);
+			path = AnthemApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		303011592066974D0041F9DE /* AnthemApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3030116C2066974D0041F9DE /* Build configuration list for PBXNativeTarget "AnthemApp" */;
+			buildPhases = (
+				303011562066974D0041F9DE /* Sources */,
+				303011572066974D0041F9DE /* Frameworks */,
+				303011582066974D0041F9DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnthemApp;
+			productName = AnthemApp;
+			productReference = 3030115A2066974D0041F9DE /* AnthemApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		303011522066974D0041F9DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Emily Wilson";
+				TargetAttributes = {
+					303011592066974D0041F9DE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 303011552066974D0041F9DE /* Build configuration list for PBXProject "AnthemApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 303011512066974D0041F9DE;
+			productRefGroup = 3030115B2066974D0041F9DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				303011592066974D0041F9DE /* AnthemApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		303011582066974D0041F9DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303011682066974D0041F9DE /* LaunchScreen.storyboard in Resources */,
+				303011792066976F0041F9DE /* Assets.xcassets in Resources */,
+				3030117E206697E10041F9DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		303011562066974D0041F9DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30301188206699E00041F9DE /* ManagerViewController.swift in Sources */,
+				3030118F20669CBC0041F9DE /* Employee.swift in Sources */,
+				30301186206699D30041F9DE /* LoginViewController.swift in Sources */,
+				3030119120669F9C0041F9DE /* Manager.swift in Sources */,
+				30301182206699B60041F9DE /* EmojiButton.swift in Sources */,
+				3030118D20669C900041F9DE /* Employees.swift in Sources */,
+				30301180206699AC0041F9DE /* AppDelegate.swift in Sources */,
+				30301184206699C60041F9DE /* EmployeeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		303011662066974D0041F9DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				303011672066974D0041F9DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3030116A2066974D0041F9DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3030116B2066974D0041F9DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3030116D2066974D0041F9DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AnthemApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ewilson.AnthemApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3030116E2066974D0041F9DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AnthemApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ewilson.AnthemApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		303011552066974D0041F9DE /* Build configuration list for PBXProject "AnthemApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3030116A2066974D0041F9DE /* Debug */,
+				3030116B2066974D0041F9DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3030116C2066974D0041F9DE /* Build configuration list for PBXNativeTarget "AnthemApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3030116D2066974D0041F9DE /* Debug */,
+				3030116E2066974D0041F9DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 303011522066974D0041F9DE /* Project object */;
+}
