@@ -16,6 +16,7 @@ class Employee {
     var past365Days: [UInt]
     var password: String
     var isManager: Bool
+    var responseStore: ResponseStorage
     
     init(name: String, id: UInt, manager: UInt, password: String, isManager: Bool) {
         employeeName = name
@@ -25,6 +26,7 @@ class Employee {
         self.isManager = isManager
         streak = 0
         past365Days = []
+        responseStore = ResponseStorage()
     }
     
     func incrStreak() {

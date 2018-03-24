@@ -15,8 +15,10 @@ class Employees {
     init() {
         var employee = Employee(name: "Emily", id: 1, manager: 2, password: "password", isManager: false)
         employeeList.updateValue(employee, forKey: 1)
-        //employee = Manager(name: "Monica", id: 2, password: "password", employees: [1])
-        //employeeList.updateValue(employee, forKey: 2)
+        employee = Employee(name: "Generic Employee Name", id: 3, manager: 2, password: "password", isManager: false)
+        employeeList.updateValue(employee, forKey: 3)
+        employee = Manager(name: "Monica", id: 2, password: "password", employees: [getEmployeeById(id: 1)!, getEmployeeById(id: 3)!])
+        employeeList.updateValue(employee, forKey: 2)
     }
     
     func add(e: Employee) {
@@ -34,6 +36,9 @@ class Employees {
     }
     
     func getEmployeeById(id: UInt) -> Employee? {
-        return employeeList[id]
+        if (employeeList.count != 0) {
+            return employeeList[id]
+        }
+        return nil
     }
 }

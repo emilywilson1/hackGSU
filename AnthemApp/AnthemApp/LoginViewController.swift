@@ -35,9 +35,10 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     
     @IBAction func login() {
-        let employeeslist = Employees()
+        var responseStore = ResponseStorage()
         print(username.text)
-        let employee = employeeslist.getEmployeeById(id: UInt(username.text!)!)
+        var employees = Employees()
+        let employee = employees.getEmployeeById(id: UInt(username.text!)!)
         if (employee != nil) {
             print(employee?.employeeName)
             if (employee!.password != password.text) {
@@ -46,7 +47,7 @@ class LoginViewController: UIViewController {
             else {
                 if (employee!.isManager) {
                     let managerVC = storyboard?.instantiateViewController(withIdentifier: "managerVC") as! ManagerViewController
-                    managerVC.user = employee! as! Manager
+                    managerVC.user = employee! as? Manager
                     self.present(managerVC, animated: true, completion: nil)
                 } else {
                     let employeeVC = storyboard?.instantiateViewController(withIdentifier: "employeeViewController") as! EmployeeViewController
