@@ -17,6 +17,7 @@ class ManagerViewController: UIViewController {
     @IBOutlet weak var satisfactionCharts: UIView!
     @IBOutlet weak var commentsBox: UIScrollView!
     
+    @IBOutlet weak var greetingLabel: UILabel!
     var user: Manager?
     
     required init?(coder aDecoder: NSCoder) {
@@ -26,7 +27,7 @@ class ManagerViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        
+        greetingLabel.text = "Hello, \(user!.employeeName)!"
     }
     
 }

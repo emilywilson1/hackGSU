@@ -9,11 +9,8 @@
 import Foundation
 class Manager: Employee {
     
-    var employeesList: [Employee]
-    
-    init(name: String, id: UInt, password: String, employees: [Employee]) {
-        employeesList = employees
-        super.init(name: name, id: id, manager: id, password: password, isManager: true)
+    init(name: String, id: UInt, password: String) {
+        super.init(name: name, id: id, manager: nil, password: password, isManager:true)
     }
 }
  

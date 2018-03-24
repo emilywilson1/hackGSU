@@ -13,12 +13,12 @@ class Employees {
     var employeeList = Dictionary<UInt, Employee>()
     
     init() {
-        var employee = Employee(name: "Emily", id: 1, manager: 2, password: "password", isManager: false)
-        employeeList.updateValue(employee, forKey: 1)
-        employee = Employee(name: "Generic Employee Name", id: 3, manager: 2, password: "password", isManager: false)
-        employeeList.updateValue(employee, forKey: 3)
-        employee = Manager(name: "Monica", id: 2, password: "password", employees: [getEmployeeById(id: 1)!, getEmployeeById(id: 3)!])
+        var employee: Employee = Manager(name: "Monica", id: 2, password: "password")
         employeeList.updateValue(employee, forKey: 2)
+        employee = Employee(name: "Emily", id: 1, manager: employeeList[2]!, password: "password", isManager: false)
+        employeeList.updateValue(employee, forKey: 1)
+        employee = Employee(name: "Generic Employee Name", id: 3, manager: employeeList[2]!, password: "password", isManager: false)
+        employeeList.updateValue(employee, forKey: 3)
     }
     
     func add(e: Employee) {

@@ -41,4 +41,8 @@ class ResponseStorage {
     func addComment(comment: String) {
         commentQueue.add(data: comment)
     }
+    
+    func addRating(rating: UInt) {
+        ratingQueue.add(data: rating)
+    }
 }

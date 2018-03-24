@@ -171,6 +171,7 @@
                     </view>
                     <connections>
                         <outlet property="commentsBox" destination="IR2-q8-7TB" id="FaI-6L-kT5"/>
+                        <outlet property="greetingLabel" destination="4Kw-gp-Dsy" id="JLF-rh-WD8"/>
                         <outlet property="percentEngagement" destination="MSV-K0-Kzr" id="8qh-kf-KgE"/>
                         <outlet property="percentFavorable" destination="Dcj-Qg-eET" id="KdB-j3-jvk"/>
                         <outlet property="satisfactionCharts" destination="UVl-ur-lbQ" id="qZy-gx-YeM"/>

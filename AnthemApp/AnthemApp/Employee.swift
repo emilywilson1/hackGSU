@@ -11,23 +11,24 @@ class Employee {
     
     var employeeName: String
     var id: UInt
-    var managerID: UInt
+    var manager: Employee?
     var streak: UInt
     var past365Days: [UInt]
     var password: String
     var isManager: Bool
     var responseStore: ResponseStorage
     
-    init(name: String, id: UInt, manager: UInt, password: String, isManager: Bool) {
+    init(name: String, id: UInt, manager: Employee?, password: String, isManager: Bool) {
         employeeName = name
         self.id = id
         self.password = password
-        managerID = manager
+        self.manager = manager
         self.isManager = isManager
         streak = 0
         past365Days = []
         responseStore = ResponseStorage()
     }
+    
     
     func incrStreak() {
         streak += 1;
