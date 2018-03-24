@@ -5,12 +5,12 @@ import android.os.Bundle;
 
 import com.amazonaws.mobile.client.AWSMobileClient;
 
-public class EmployeePortal extends AppCompatActivity {
+public class ManagerPortal extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_employee_portal);
         AWSMobileClient.getInstance().initialize(this).execute();
+        setContentView(R.layout.activity_manager_portal);
     }
 }
