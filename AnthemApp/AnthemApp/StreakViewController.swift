@@ -23,7 +23,6 @@ class StreakViewController: UIViewController {
         user = nil
         response = nil
         super.init(coder: aDecoder)
-        //fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
@@ -43,6 +42,9 @@ class StreakViewController: UIViewController {
     }
     @IBAction func submitFeedback() {
         user!.manager!.responseStore.addComment(comment: suggestionBox.text!)
+        let submittedVC = storyboard?.instantiateViewController(withIdentifier: "submittedFeedback") as! LogoutDetailController
+        submittedVC.user = user!
+        self.present(submittedVC, animated: true, completion: nil)
     }
     
     @IBAction func logout() {

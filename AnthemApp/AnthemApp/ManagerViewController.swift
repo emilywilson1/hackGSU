@@ -24,7 +24,6 @@ class ManagerViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         user = nil
         super.init(coder: aDecoder)
-        //fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {

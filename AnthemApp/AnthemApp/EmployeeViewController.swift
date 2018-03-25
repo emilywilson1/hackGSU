@@ -21,7 +21,6 @@ class EmployeeViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         user = nil
         super.init(coder: aDecoder)
-        //fatalError("init(coder:) has not been implemented")
     }
     
     @IBAction func emoji0Pressed() {
