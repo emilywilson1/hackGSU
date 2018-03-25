@@ -12,7 +12,7 @@ class ResponseStorage {
     var commentQueue: Queue<String>
     var ratingQueue: Queue<Int>
     var size: Int
-    var average_rating : Float
+    var average_rating : Double
     var favorableResponses: Int
     
     class Queue<T> {
@@ -54,7 +54,7 @@ class ResponseStorage {
     }
     
     func addRating(rating: Int) {
-        average_rating = ((average_rating * Float(size)) + Float(rating)) / Float(size + 1)
+        average_rating = ((average_rating * Double(size)) + Double(rating)) / Double(size + 1)
         if (rating > 2) {
             favorableResponses += 1
         }
