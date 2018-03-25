@@ -14,6 +14,7 @@ class ManagerViewController: UIViewController {
     
     @IBOutlet weak var percentEngagement: UILabel!
     
+    @IBOutlet weak var logoutButton: UIButton!
     @IBOutlet weak var percentFavorable: UILabel!
     @IBOutlet weak var satisfactionCharts: BarChartView!
     @IBOutlet weak var commentsBox: UITableView!
@@ -28,6 +29,7 @@ class ManagerViewController: UIViewController {
     
     override func viewDidLoad() {
         greetingLabel.text = "Hello, \(user!.employeeName)!"
+        logoutButton.setTitleColor(Colors.darkBlue, for: .normal)
         setupEngagementChart()
     }
     

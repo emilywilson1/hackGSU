@@ -12,10 +12,12 @@ import UIKit
 class EmployeeViewController: UIViewController {
     @IBOutlet weak var helloLabel: UILabel!
     var user: Employee?
+    @IBOutlet weak var employeeWell: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         helloLabel.text = "Hello, \(user!.employeeName)!"
+        employeeWell.layer.cornerRadius = 8.5
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -41,12 +43,20 @@ class EmployeeViewController: UIViewController {
     
     func emojiButtonPressed(emojiNum: Int) {
         let streakVC = storyboard?.instantiateViewController(withIdentifier: "streakVC") as! StreakViewController
-        user!.incrStreak()
         streakVC.user = user!
         streakVC.response = emojiNum
-        user!.responseStore.addRating(rating: emojiNum + 1)
-        user!.manager!.responseStore.addRating(rating: emojiNum + 1)
-        user!.anthemStore.addRating(rating: emojiNum + 1)
+        let lastResponse = user!.responseStore.getLastResponse()
+        if (lastResponse == nil) {
+            user!.incrStreak()
+            user!.responseStore.addRating(rating: emojiNum + 1)
+            user!.manager!.responseStore.addRating(rating: emojiNum + 1)
+            user!.anthemStore.addRating(rating: emojiNum + 1)
+        } else if (lastResponse!.responseAge() > 24) {
+            user!.incrStreak()
+            user!.responseStore.addRating(rating: emojiNum + 1)
+            user!.manager!.responseStore.addRating(rating: emojiNum + 1)
+            user!.anthemStore.addRating(rating: emojiNum + 1)
+        }
         self.present(streakVC, animated: true, completion: nil)
     }
     

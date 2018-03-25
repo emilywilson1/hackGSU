@@ -11,6 +11,10 @@ import UIKit
 
 class StreakViewController: UIViewController {
     @IBOutlet weak var greetingLabel: UILabel!
+    @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var ratingsButton: UIButton!
+    @IBOutlet weak var feedbackButton: UIButton!
+    @IBOutlet weak var streakView: UIView!
     
     @IBOutlet weak var streakLabel: UILabel!
     @IBOutlet weak var suggestionLabel: UILabel!
@@ -27,6 +31,10 @@ class StreakViewController: UIViewController {
     
     override func viewDidLoad() {
         streakLabel.text = "\(user!.streak) days!"
+        logoutButton.setTitleColor(Colors.darkBlue, for: .normal)
+        ratingsButton.setTitleColor(Colors.darkBlue, for: .normal)
+        feedbackButton.setTitleColor(Colors.darkBlue, for: .normal)
+        streakView.layer.cornerRadius = 8.5
         if (response != nil && response! < 3) {
             greetingLabel.text = "We're sorry your experience wasn't satisfactory today!"
             suggestionLabel.text = "Is there anything we can do to make your experience at Anthem a little better?"

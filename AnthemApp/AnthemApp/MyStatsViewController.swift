@@ -17,6 +17,7 @@ class MyStatsViewController: UIViewController {
     @IBOutlet weak var teamRating: UILabel!
     @IBOutlet weak var anthemRating: UILabel!
     @IBOutlet weak var chart: BarChartView!
+    @IBOutlet weak var logoutButton: UIButton!
     
     var user: Employee?
     
@@ -29,6 +30,7 @@ class MyStatsViewController: UIViewController {
         myRating.text = "\(user!.responseStore.average_rating)"
         teamRating.text = "\(user!.manager!.responseStore.average_rating)"
         greetingLabel.text = "Hi \(user!.employeeName), here are your stats!"
+        logoutButton.setTitleColor(Colors.darkBlue, for: .normal)
         let entry0 = BarChartDataEntry(x: 0, y: user!.responseStore.average_rating)
         let entry1 = BarChartDataEntry(x: 1, y: user!.manager!.responseStore.average_rating)
         let entry2 = BarChartDataEntry(x: 2, y: user!.anthemStore.average_rating)

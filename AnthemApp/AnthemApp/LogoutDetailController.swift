@@ -13,6 +13,15 @@ class LogoutDetailController: UIViewController {
     
     var user: Employee?
     
+    @IBOutlet weak var logoutView: UIView!
+    @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var statsButton: UIButton!
+    
+    override func viewDidLoad() {
+        logoutView.layer.cornerRadius = 8.5
+        logoutButton.setTitleColor(Colors.darkBlue, for: .normal)
+        statsButton.setTitleColor(Colors.darkBlue, for: .normal)
+    }
     required init?(coder aDecoder: NSCoder) {
         user = nil
         super.init(coder: aDecoder)

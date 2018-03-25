@@ -10,23 +10,23 @@ import Foundation
 
 class ResponseStorage {
     var comments: [String]
-    var ratings: [Int]
+    var responses: [Response]
     var size: Int
     var average_rating : Double
     var favorableResponses: Int
     
     init() {
         comments = [String]()
-        ratings = [Int]()
+        responses = [Response]()
         size = 0;
         average_rating = 0
         favorableResponses = 0
     }
     
-    convenience init(ratings: [Int]) {
+    convenience init(ratings: [Response]) {
         self.init()
         for rating in ratings {
-            self.ratings.append(rating)
+            responses.append(rating)
         }
     }
     
@@ -39,7 +39,7 @@ class ResponseStorage {
         if (rating > 2) {
             favorableResponses += 1
         }
-        ratings.append(rating)
+        responses.append(Response(rating: rating, date: Date()))
         size += 1
     }
     
@@ -48,6 +48,17 @@ class ResponseStorage {
     }
     
     func toArray() -> [Int] {
+        var ratings = [Int]()
+        for response in responses {
+            ratings.append(response.rating)
+        }
         return ratings
+    }
+    
+    func getLastResponse() -> Response? {
+        if (size == 0) {
+            return nil
+        }
+        return responses[size - 1]
     }
 }
