@@ -21,9 +21,23 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     
     @IBAction func login() {
-        var responseStore = ResponseStorage()
-        print(username.text)
-        var employees = Employees()
+        var employees: Employees
+        /*if (UserDefaults.standard.object(forKey: "employees") != nil) {
+            let employeeNums = UserDefaults.standard.object(forKey: "employees") as! [Int]
+            var employeeList = [Employee]()
+            let d = UserDefaults.standard
+            for e in employeeNums {
+                print(d.object(forKey: "\(e)-isManager"))
+                if (!(d.object(forKey: "\(e)-isManager") as! Bool)) {
+                    employeeList.append(Employee(name: d.object(forKey: "\(e)-name") as! String, id: d.object(forKey: "\(e)-id") as! UInt, manager: d.object(forKey: "\(e)-manager") as! Employee, password: d.object(forKey: "\(e)-password") as! String, isManager: (d.object(forKey: "\(e)-isManager") != nil), anthemStore: ResponseStorage(ratings: d.object(forKey: "anthem-store") as! [Int]), responses: ResponseStorage(ratings: d.object(forKey: "\(e)-responses") as! [Int])))
+                } else {
+                    employeeList.append(Manager(name: d.object(forKey: "\(e)-name") as! String, id: d.object(forKey: "\(e)-id") as! UInt, password: d.object(forKey: "\(e)-password") as! String, anthemStore: ResponseStorage(ratings: d.object(forKey: "anthem-store") as! [Int]), responses: ResponseStorage(ratings: d.object(forKey: "\(e)-responses") as! [Int])))
+                }
+            }
+            employees = Employees(employees: employeeList)
+        } else {*/
+        employees = Employees()
+        //}
         let employee = employees.getEmployeeById(id: UInt(username.text!)!)
         if (employee != nil) {
             print(employee?.employeeName)

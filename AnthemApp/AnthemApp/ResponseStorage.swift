@@ -42,6 +42,13 @@ class ResponseStorage {
         favorableResponses = 0
     }
     
+    convenience init(ratings: [Int]) {
+        self.init()
+        for rating in ratings {
+            addRating(rating: rating)
+        }
+    }
+    
     func addComment(comment: String) {
         commentQueue.add(data: comment)
     }
@@ -52,9 +59,14 @@ class ResponseStorage {
             favorableResponses += 1
         }
         ratingQueue.add(data: rating)
+        size += 1
     }
     
     func resetAverages() {
         average_rating = 0
+    }
+    
+    func toArray() -> [Int] {
+        return ratingQueue.backingArray
     }
 }

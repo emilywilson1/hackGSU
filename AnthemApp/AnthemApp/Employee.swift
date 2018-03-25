@@ -18,14 +18,18 @@ class Employee {
     var responseStore: ResponseStorage
     var anthemStore: ResponseStorage
     
-    init(name: String, id: UInt, manager: Employee?, password: String, isManager: Bool, anthemStore: ResponseStorage) {
+    init(name: String, id: UInt, manager: Employee?, password: String, isManager: Bool, anthemStore: ResponseStorage, responses: ResponseStorage?) {
         employeeName = name
         self.id = id
         self.password = password
         self.manager = manager
         self.isManager = isManager
+        if (responses == nil) {
+            responseStore = ResponseStorage()
+        } else {
+            responseStore = responses!
+        }
         streak = 0
-        responseStore = ResponseStorage()
         self.anthemStore = anthemStore
     }
     
