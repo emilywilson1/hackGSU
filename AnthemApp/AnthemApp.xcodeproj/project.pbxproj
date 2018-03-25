@@ -20,15 +20,45 @@
 		303011952066B1860041F9DE /* StreakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303011942066B1860041F9DE /* StreakViewController.swift */; };
 		303011A52066CAB80041F9DE /* ResponseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303011A42066CAB80041F9DE /* ResponseStorage.swift */; };
 		303011A72066EC6D0041F9DE /* MyStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303011A62066EC6D0041F9DE /* MyStatsViewController.swift */; };
+		303011CD206710BF0041F9DE /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 303011CC206710BF0041F9DE /* awsconfiguration.json */; };
+		30D3121420671B940062568C /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3121220671B940062568C /* Users.swift */; };
+		30D3121520671D9D0062568C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303011C52066FDA50041F9DE /* Charts.framework */; };
+		30D3121620671D9D0062568C /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 303011C52066FDA50041F9DE /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8F764C3032FEB56E293B58B /* Pods_AnthemApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B3C400B7F23B41F53D2C75 /* Pods_AnthemApp.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		303011C42066FDA50041F9DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 303011BF2066FDA50041F9DE /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		303011C62066FDA50041F9DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 303011BF2066FDA50041F9DE /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		30D3121720671D9D0062568C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 303011BF2066FDA50041F9DE /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		303011A32066C6F50041F9DE /* Embed Frameworks */ = {
+		30D3121920671D9D0062568C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				30D3121620671D9D0062568C /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,6 +66,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		24B3C400B7F23B41F53D2C75 /* Pods_AnthemApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnthemApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3030115A2066974D0041F9DE /* AnthemApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnthemApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		303011672066974D0041F9DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		303011692066974D0041F9DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,9 +80,13 @@
 		3030118E20669CBC0041F9DE /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		3030119020669F9C0041F9DE /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		303011942066B1860041F9DE /* StreakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakViewController.swift; sourceTree = "<group>"; };
-		303011962066C6E60041F9DE /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Charts.xcodeproj; sourceTree = "<group>"; };
 		303011A42066CAB80041F9DE /* ResponseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStorage.swift; sourceTree = "<group>"; };
 		303011A62066EC6D0041F9DE /* MyStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatsViewController.swift; sourceTree = "<group>"; };
+		303011BF2066FDA50041F9DE /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		303011CC206710BF0041F9DE /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		30D3121220671B940062568C /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		C92959F97A2EF0DC0AEBAFB8 /* Pods-AnthemApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnthemApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnthemApp/Pods-AnthemApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DBC2725361F052284784C019 /* Pods-AnthemApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnthemApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnthemApp/Pods-AnthemApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +94,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8F764C3032FEB56E293B58B /* Pods_AnthemApp.framework in Frameworks */,
+				30D3121520671D9D0062568C /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CCC099B7678DEB3687C6B1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C92959F97A2EF0DC0AEBAFB8 /* Pods-AnthemApp.debug.xcconfig */,
+				DBC2725361F052284784C019 /* Pods-AnthemApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		303011512066974D0041F9DE = {
 			isa = PBXGroup;
 			children = (
+				303011BF2066FDA50041F9DE /* Charts.xcodeproj */,
 				3030115C2066974D0041F9DE /* AnthemApp */,
 				3030115B2066974D0041F9DE /* Products */,
+				2CCC099B7678DEB3687C6B1D /* Pods */,
+				6530DA5C4E8B2D837AC9354D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,8 +133,9 @@
 		3030115C2066974D0041F9DE /* AnthemApp */ = {
 			isa = PBXGroup;
 			children = (
-				303011962066C6E60041F9DE /* Charts.xcodeproj */,
+				303011CC206710BF0041F9DE /* awsconfiguration.json */,
 				303011732066976F0041F9DE /* Assets.xcassets */,
+				30D3121220671B940062568C /* Users.swift */,
 				303011942066B1860041F9DE /* StreakViewController.swift */,
 				30301183206699C60041F9DE /* EmployeeViewController.swift */,
 				30301185206699D30041F9DE /* LoginViewController.swift */,
@@ -103,6 +153,23 @@
 			path = AnthemApp;
 			sourceTree = "<group>";
 		};
+		303011C02066FDA50041F9DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				303011C52066FDA50041F9DE /* Charts.framework */,
+				303011C72066FDA50041F9DE /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6530DA5C4E8B2D837AC9354D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24B3C400B7F23B41F53D2C75 /* Pods_AnthemApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,14 +177,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3030116C2066974D0041F9DE /* Build configuration list for PBXNativeTarget "AnthemApp" */;
 			buildPhases = (
+				CE379AB5025C9C5F75DA91B5 /* [CP] Check Pods Manifest.lock */,
 				303011562066974D0041F9DE /* Sources */,
 				303011572066974D0041F9DE /* Frameworks */,
 				303011582066974D0041F9DE /* Resources */,
-				303011A32066C6F50041F9DE /* Embed Frameworks */,
+				653353A42FBBC5E7096E93FA /* [CP] Embed Pods Frameworks */,
+				E1BD360767E34A0132DDC890 /* [CP] Copy Pods Resources */,
+				30D3121920671D9D0062568C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				30D3121820671D9D0062568C /* PBXTargetDependency */,
 			);
 			name = AnthemApp;
 			productName = AnthemApp;
@@ -151,6 +222,12 @@
 			mainGroup = 303011512066974D0041F9DE;
 			productRefGroup = 3030115B2066974D0041F9DE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 303011C02066FDA50041F9DE /* Products */;
+					ProjectRef = 303011BF2066FDA50041F9DE /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				303011592066974D0041F9DE /* AnthemApp */,
@@ -158,11 +235,29 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		303011C52066FDA50041F9DE /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 303011C42066FDA50041F9DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		303011C72066FDA50041F9DE /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 303011C62066FDA50041F9DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		303011582066974D0041F9DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				303011CD206710BF0041F9DE /* awsconfiguration.json in Resources */,
 				303011682066974D0041F9DE /* LaunchScreen.storyboard in Resources */,
 				303011792066976F0041F9DE /* Assets.xcassets in Resources */,
 				3030117E206697E10041F9DE /* Main.storyboard in Resources */,
@@ -170,6 +265,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		653353A42FBBC5E7096E93FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AnthemApp/Pods-AnthemApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnthemApp/Pods-AnthemApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE379AB5025C9C5F75DA91B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnthemApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1BD360767E34A0132DDC890 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnthemApp/Pods-AnthemApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		303011562066974D0041F9DE /* Sources */ = {
@@ -186,10 +341,19 @@
 				3030118D20669C900041F9DE /* Employees.swift in Sources */,
 				30301180206699AC0041F9DE /* AppDelegate.swift in Sources */,
 				30301184206699C60041F9DE /* EmployeeViewController.swift in Sources */,
+				30D3121420671B940062568C /* Users.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30D3121820671D9D0062568C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 30D3121720671D9D0062568C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		303011662066974D0041F9DE /* LaunchScreen.storyboard */ = {
@@ -312,10 +476,12 @@
 		};
 		3030116D2066974D0041F9DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92959F97A2EF0DC0AEBAFB8 /* Pods-AnthemApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FQ244E4AK;
 				INFOPLIST_FILE = AnthemApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ewilson.AnthemApp;
@@ -327,10 +493,12 @@
 		};
 		3030116E2066974D0041F9DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC2725361F052284784C019 /* Pods-AnthemApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FQ244E4AK;
 				INFOPLIST_FILE = AnthemApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ewilson.AnthemApp;

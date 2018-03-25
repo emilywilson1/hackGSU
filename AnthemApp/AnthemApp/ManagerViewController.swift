@@ -8,12 +8,13 @@
 
 import Foundation
 import UIKit
+import Charts
 
 class ManagerViewController: UIViewController {
     @IBOutlet weak var timePeriod: UISegmentedControl!
-    @IBOutlet weak var percentEngagement: UIView!
+    @IBOutlet weak var percentEngagement: PieChartView!
     
-    @IBOutlet weak var percentFavorable: UIView!
+    @IBOutlet weak var percentFavorable: PieChartView!
     @IBOutlet weak var satisfactionCharts: UIView!
     @IBOutlet weak var commentsBox: UIScrollView!
     
@@ -33,6 +34,19 @@ class ManagerViewController: UIViewController {
     @IBAction func logout() {
         let loginVC = storyboard?.instantiateViewController(withIdentifier: "loginVC") as! LoginViewController
         self.present(loginVC, animated: true, completion: nil)
+    }
+    
+    func setupEngagementChart() {
+        let numEngaged = Double(user!.responseStore.size) / Double(user!.employees)
+        let numFavorable = Double(user!.responseStore.favorableResponses) / Double(user!.responseStore.size)
+        let engaged = PieChartDataEntry(value: numEngaged, label: "Engaged Employees")
+        let notEngaged = PieChartDataEntry(value: 1 - numEngaged, label: "Unengaged Employees")
+        var dataSet = PieChartDataSet(values: [engaged, notEngaged], label: "Percent Engagement")
+        percentEngagement.data? = PieChartData(dataSet: dataSet)
+        let favorable = PieChartDataEntry(value: numFavorable, label: "Favorable Responses")
+        let unfavorable = PieChartDataEntry(value: 1 - numFavorable, label: "Favorable Responses")
+        dataSet = PieChartDataSet(values: [favorable, unfavorable], label: "Percent Favorable")
+        percentFavorable.data? = PieChartData(dataSet: dataSet)
     }
 }
 

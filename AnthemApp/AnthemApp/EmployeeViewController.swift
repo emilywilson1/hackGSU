@@ -45,8 +45,9 @@ class EmployeeViewController: UIViewController {
         user!.incrStreak()
         streakVC.user = user!
         streakVC.response = emojiNum
-        user!.responseStore.addRating(rating: emojiNum)
-        user!.manager!.responseStore.addRating(rating: emojiNum)
+        user!.responseStore.addRating(rating: emojiNum + 1)
+        user!.manager!.responseStore.addRating(rating: emojiNum + 1)
+        user!.anthemStore.addRating(rating: emojiNum + 1)
         self.present(streakVC, animated: true, completion: nil)
     }
     

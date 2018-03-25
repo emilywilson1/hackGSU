@@ -13,7 +13,6 @@ class Employee {
     var id: UInt
     var manager: Employee?
     var streak: UInt
-    var past365Days: [UInt]
     var password: String
     var isManager: Bool
     var responseStore: ResponseStorage
@@ -26,7 +25,6 @@ class Employee {
         self.manager = manager
         self.isManager = isManager
         streak = 0
-        past365Days = []
         responseStore = ResponseStorage()
         self.anthemStore = anthemStore
     }

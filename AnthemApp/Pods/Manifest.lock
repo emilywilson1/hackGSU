@@ -1,0 +1,22 @@
+PODS:
+  - AWSAuthCore (2.6.13):
+    - AWSCore (= 2.6.13)
+  - AWSCore (2.6.13)
+  - AWSDynamoDB (2.6.13):
+    - AWSCore (= 2.6.13)
+  - AWSMobileClient (2.6.13):
+    - AWSAuthCore (= 2.6.13)
+
+DEPENDENCIES:
+  - AWSDynamoDB (~> 2.6.13)
+  - AWSMobileClient (~> 2.6.13)
+
+SPEC CHECKSUMS:
+  AWSAuthCore: 821990b7fc2febe5ed5eb42199ea55ee22ac911d
+  AWSCore: 5da797bc476188fdaf00dec134fa18d84708eca9
+  AWSDynamoDB: 36abff7ce93fcadad2c4dc6f729d8716c933adf2
+  AWSMobileClient: bf1c341c91f82eda8f757cd96dc0cbb3d1f0b768
+
+PODFILE CHECKSUM: f367acee9ddc47499d25369f5d5e5d7ead807d68
+
+COCOAPODS: 1.4.0

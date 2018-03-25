@@ -13,6 +13,7 @@ class ResponseStorage {
     var ratingQueue: Queue<Int>
     var size: Int
     var average_rating : Float
+    var favorableResponses: Int
     
     class Queue<T> {
         var backingArray: [T]
@@ -38,6 +39,7 @@ class ResponseStorage {
         ratingQueue = Queue()
         size = 0;
         average_rating = 0
+        favorableResponses = 0
     }
     
     func addComment(comment: String) {
@@ -46,6 +48,9 @@ class ResponseStorage {
     
     func addRating(rating: Int) {
         average_rating = ((average_rating * Float(size)) + Float(rating)) / Float(size + 1)
+        if (rating > 2) {
+            favorableResponses += 1
+        }
         ratingQueue.add(data: rating)
     }
     

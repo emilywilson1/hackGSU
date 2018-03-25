@@ -17,8 +17,10 @@ class Employees {
         var employee: Employee = Manager(name: "Monica", id: 2, password: "password", anthemStore: anthemStore)
         employeeList.updateValue(employee, forKey: 2)
         employee = Employee(name: "Emily", id: 1, manager: employeeList[2]!, password: "password", isManager: false, anthemStore: anthemStore)
+        (employeeList[2]! as! Manager).addEmployee()
         employeeList.updateValue(employee, forKey: 1)
         employee = Employee(name: "Generic Employee Name", id: 3, manager: employeeList[2]!, password: "password", isManager: false, anthemStore: anthemStore)
+        (employeeList[2]! as! Manager).addEmployee()
         employeeList.updateValue(employee, forKey: 3)
     }
     
