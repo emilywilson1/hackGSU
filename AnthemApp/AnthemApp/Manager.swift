@@ -11,7 +11,7 @@ class Manager: Employee {
     
     var employees: Int
     
-    init(name: String, id: UInt, password: String, anthemStore: ResponseStorage, responses: ResponseStorage?) {
+    init(name: String, id: Int, password: String, anthemStore: ResponseStorage, responses: ResponseStorage?) {
         employees = 0
         super.init(name: name, id: id, manager: nil, password: password, isManager:true, anthemStore: anthemStore, responses: responses)
     }

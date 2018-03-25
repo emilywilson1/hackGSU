@@ -10,10 +10,11 @@ import Foundation
 
 class Employees {
     
-    var employeeList = Dictionary<UInt, Employee>()
-    var anthemStore: ResponseStorage
+    static var anthemStore =  ResponseStorage()
+    static var managers = [Manager(name: "Monica", id: 2, password: "password", anthemStore: anthemStore, responses: nil)]
+    static var employeeList = [1: Employee(name: "Emily", id: 1, manager: managers[0], password: "password", isManager: false, anthemStore: anthemStore, responses: ResponseStorage()), 2: managers[0], 3: Employee(name: "Generic Employee Name", id: 3, manager: managers[0], password: "password", isManager: false, anthemStore: anthemStore, responses: ResponseStorage())]
     
-    init(employees: [Employee]) {
+    /*init(employees: [Employee]) {
         if (employees.count == 0) {
             anthemStore = ResponseStorage()
             let array = [1, 2, 3]
@@ -62,13 +63,13 @@ class Employees {
     
     convenience init() {
         self.init(employees: [])
-    }
+    }*/
     
     func add(e: Employee) {
-        employeeList.updateValue(e, forKey: e.id);
+        Employees.employeeList.updateValue(e, forKey: e.id);
     }
     
-    func getEmployeesByIds(employeeIds: [UInt]) -> [Employee] {
+    static func getEmployeesByIds(employeeIds: [Int]) -> [Employee] {
         var employees = [Employee]()
         for id in employeeIds {
             if (getEmployeeById(id: id) != nil) {
@@ -78,16 +79,16 @@ class Employees {
         return employees
     }
     
-    func getEmployeeById(id: UInt) -> Employee? {
-        if (employeeList.count != 0) {
-            return employeeList[id]
+    static func getEmployeeById(id: Int) -> Employee? {
+        if (Employees.employeeList.count != 0) {
+            return Employees.employeeList[id]
         }
         return nil
     }
     
     func toArray() -> [Employee] {
         var list = [Employee]()
-        for value in employeeList.values {
+        for value in Employees.employeeList.values {
             list.append(value)
         }
         return list

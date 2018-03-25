@@ -21,8 +21,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     
     @IBAction func login() {
-        var employees: Employees
-        /*if (UserDefaults.standard.object(forKey: "employees") != nil) {
+        /*var employees: Employees
+        if (UserDefaults.standard.object(forKey: "employees") != nil) {
             let employeeNums = UserDefaults.standard.object(forKey: "employees") as! [Int]
             var employeeList = [Employee]()
             let d = UserDefaults.standard
@@ -35,10 +35,10 @@ class LoginViewController: UIViewController {
                 }
             }
             employees = Employees(employees: employeeList)
-        } else {*/
+        } else {
         employees = Employees()
-        //}
-        let employee = employees.getEmployeeById(id: UInt(username.text!)!)
+        }*/
+        let employee = Employees.getEmployeeById(id: Int(username.text!)!)
         if (employee != nil) {
             print(employee?.employeeName)
             if (employee!.password != password.text) {

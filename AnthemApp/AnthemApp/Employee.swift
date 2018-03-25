@@ -10,7 +10,7 @@ import Foundation
 class Employee {
     
     var employeeName: String
-    var id: UInt
+    var id: Int
     var manager: Employee?
     var streak: UInt
     var password: String
@@ -18,11 +18,14 @@ class Employee {
     var responseStore: ResponseStorage
     var anthemStore: ResponseStorage
     
-    init(name: String, id: UInt, manager: Employee?, password: String, isManager: Bool, anthemStore: ResponseStorage, responses: ResponseStorage?) {
+    init(name: String, id: Int, manager: Employee?, password: String, isManager: Bool, anthemStore: ResponseStorage, responses: ResponseStorage?) {
         employeeName = name
         self.id = id
         self.password = password
         self.manager = manager
+        if (!isManager) {
+            (manager! as! Manager).addEmployee()
+        }
         self.isManager = isManager
         if (responses == nil) {
             responseStore = ResponseStorage()

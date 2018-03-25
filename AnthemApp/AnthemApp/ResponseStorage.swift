@@ -9,34 +9,15 @@
 import Foundation
 
 class ResponseStorage {
-    var commentQueue: Queue<String>
-    var ratingQueue: Queue<Int>
+    var comments: [String]
+    var ratings: [Int]
     var size: Int
     var average_rating : Double
     var favorableResponses: Int
     
-    class Queue<T> {
-        var backingArray: [T]
-        var size: Int
-        init() {
-            backingArray = [T]()
-            size = 0
-        }
-        
-        func add(data: T) {
-            backingArray.append(data)
-            size += 1
-        }
-        
-        func remove() {
-            size -= 1
-            backingArray.remove(at: size)
-        }
-    }
-    
     init() {
-        commentQueue = Queue()
-        ratingQueue = Queue()
+        comments = [String]()
+        ratings = [Int]()
         size = 0;
         average_rating = 0
         favorableResponses = 0
@@ -45,12 +26,12 @@ class ResponseStorage {
     convenience init(ratings: [Int]) {
         self.init()
         for rating in ratings {
-            addRating(rating: rating)
+            self.ratings.append(rating)
         }
     }
     
     func addComment(comment: String) {
-        commentQueue.add(data: comment)
+        comments.append(comment)
     }
     
     func addRating(rating: Int) {
@@ -58,7 +39,7 @@ class ResponseStorage {
         if (rating > 2) {
             favorableResponses += 1
         }
-        ratingQueue.add(data: rating)
+        ratings.append(rating)
         size += 1
     }
     
@@ -67,6 +48,6 @@ class ResponseStorage {
     }
     
     func toArray() -> [Int] {
-        return ratingQueue.backingArray
+        return ratings
     }
 }
