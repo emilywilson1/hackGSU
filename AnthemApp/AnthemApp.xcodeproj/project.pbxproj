@@ -22,11 +22,11 @@
 		303011A72066EC6D0041F9DE /* MyStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303011A62066EC6D0041F9DE /* MyStatsViewController.swift */; };
 		303011CD206710BF0041F9DE /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 303011CC206710BF0041F9DE /* awsconfiguration.json */; };
 		30D3121420671B940062568C /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3121220671B940062568C /* Users.swift */; };
-		30D3121520671D9D0062568C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303011C52066FDA50041F9DE /* Charts.framework */; };
-		30D3121620671D9D0062568C /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 303011C52066FDA50041F9DE /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		30D3121E20674B310062568C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3121D20674B310062568C /* Constants.swift */; };
 		30D31220206754110062568C /* LogoutDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3121F206754110062568C /* LogoutDetailController.swift */; };
 		30D312222067CC730062568C /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D312212067CC730062568C /* Response.swift */; };
+		30D312372067E3DD0062568C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303011C52066FDA50041F9DE /* Charts.framework */; };
+		30D312382067E3DD0062568C /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 303011C52066FDA50041F9DE /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B8F764C3032FEB56E293B58B /* Pods_AnthemApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B3C400B7F23B41F53D2C75 /* Pods_AnthemApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,7 @@
 			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
 			remoteInfo = ChartsTests;
 		};
-		30D3121720671D9D0062568C /* PBXContainerItemProxy */ = {
+		30D312392067E3DD0062568C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 303011BF2066FDA50041F9DE /* Charts.xcodeproj */;
 			proxyType = 1;
@@ -55,13 +55,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		30D3121920671D9D0062568C /* Embed Frameworks */ = {
+		30D3123B2067E3DD0062568C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				30D3121620671D9D0062568C /* Charts.framework in Embed Frameworks */,
+				30D312382067E3DD0062568C /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,7 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8F764C3032FEB56E293B58B /* Pods_AnthemApp.framework in Frameworks */,
-				30D3121520671D9D0062568C /* Charts.framework in Frameworks */,
+				30D312372067E3DD0062568C /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,12 +192,12 @@
 				303011582066974D0041F9DE /* Resources */,
 				653353A42FBBC5E7096E93FA /* [CP] Embed Pods Frameworks */,
 				E1BD360767E34A0132DDC890 /* [CP] Copy Pods Resources */,
-				30D3121920671D9D0062568C /* Embed Frameworks */,
+				30D3123B2067E3DD0062568C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				30D3121820671D9D0062568C /* PBXTargetDependency */,
+				30D3123A2067E3DD0062568C /* PBXTargetDependency */,
 			);
 			name = AnthemApp;
 			productName = AnthemApp;
@@ -360,10 +360,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		30D3121820671D9D0062568C /* PBXTargetDependency */ = {
+		30D3123A2067E3DD0062568C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Charts;
-			targetProxy = 30D3121720671D9D0062568C /* PBXContainerItemProxy */;
+			targetProxy = 30D312392067E3DD0062568C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

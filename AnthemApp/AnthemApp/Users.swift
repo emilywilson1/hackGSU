@@ -13,9 +13,9 @@
 
 import Foundation
 import UIKit
-import AWSDynamoDB
+//import AWSDynamoDB
 
-class Users: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
+/*class Users: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
     var _employeeID: NSNumber?
     var _employees: [String]?
@@ -46,4 +46,4 @@ class Users: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
                "_streak" : "streak",
         ]
     }
-}
+}*/
