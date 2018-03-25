@@ -24,6 +24,7 @@
 		30D3121420671B940062568C /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3121220671B940062568C /* Users.swift */; };
 		30D3121520671D9D0062568C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303011C52066FDA50041F9DE /* Charts.framework */; };
 		30D3121620671D9D0062568C /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 303011C52066FDA50041F9DE /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30D3121E20674B310062568C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3121D20674B310062568C /* Constants.swift */; };
 		B8F764C3032FEB56E293B58B /* Pods_AnthemApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B3C400B7F23B41F53D2C75 /* Pods_AnthemApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		303011BF2066FDA50041F9DE /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		303011CC206710BF0041F9DE /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		30D3121220671B940062568C /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		30D3121D20674B310062568C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C92959F97A2EF0DC0AEBAFB8 /* Pods-AnthemApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnthemApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnthemApp/Pods-AnthemApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DBC2725361F052284784C019 /* Pods-AnthemApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnthemApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnthemApp/Pods-AnthemApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 				30301187206699E00041F9DE /* ManagerViewController.swift */,
 				3030118C20669C900041F9DE /* Employees.swift */,
 				3030118E20669CBC0041F9DE /* Employee.swift */,
+				30D3121D20674B310062568C /* Constants.swift */,
 				303011A42066CAB80041F9DE /* ResponseStorage.swift */,
 				3030119020669F9C0041F9DE /* Manager.swift */,
 				3030117D206697E10041F9DE /* Main.storyboard */,
@@ -342,6 +345,7 @@
 				30301180206699AC0041F9DE /* AppDelegate.swift in Sources */,
 				30301184206699C60041F9DE /* EmployeeViewController.swift in Sources */,
 				30D3121420671B940062568C /* Users.swift in Sources */,
+				30D3121E20674B310062568C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

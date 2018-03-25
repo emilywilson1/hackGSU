@@ -13,9 +13,17 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginBackground.layer.cornerRadius = 8.5
+        loginBackground.backgroundColor = Colors.blue
+        centerBackground.layer.cornerRadius = 8.5
+        loginButton.layer.cornerRadius = 8.5
+        loginButton.setTitleColor(Colors.darkBlue, for: .normal)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var loginBackground: UIView!
+    @IBOutlet weak var centerBackground: UIView!
     @IBOutlet weak var username: UITextField!
     
     @IBOutlet weak var password: UITextField!

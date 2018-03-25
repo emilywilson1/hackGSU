@@ -64,6 +64,16 @@ class ManagerViewController: UIViewController {
         }
         var engaged = Double(total) / Double(user!.employees)
         favorable /= Double(total)
+        if (favorable < 0.7) {
+            percentFavorable.textColor = Colors.red
+        } else {
+            percentFavorable.textColor = Colors.green
+        }
+        if (engaged < 0.7) {
+            percentEngagement.textColor = Colors.red
+        } else {
+            percentEngagement.textColor = Colors.green
+        }
         percentFavorable.text = "\(Int(favorable * 100))%"
         percentEngagement.text = "\(Int(engaged * 100))%"
         let entry0 = BarChartDataEntry(x: 0, y: Double(emoji0))
